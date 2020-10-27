@@ -1,1 +1,11 @@
-<app-goalie-loader></app-goalie-loader>
+<form #filterForm="ngForm" (ngSubmit)="handleFitlerForm(filterForm)">
+  <label for="filter">Filter Loaders : </label
+  ><input
+    type="text"
+    name="filter"
+    placeholder="Filter by Class Name"
+    ngModel
+  />
+  <button>Search</button>
+</form>
+<app-goalie-loader class="sports loader soccer"></app-goalie-loader>
