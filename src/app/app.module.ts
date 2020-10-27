@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GoalieLoaderComponent } from './goalie-loader/goalie-loader.component';
 import { HeaderComponent } from './header/header.component';
+import { AllLoadersComponent } from './all-loaders/all-loaders.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoalieLoaderComponent,
-    HeaderComponent
+    HeaderComponent,
+    AllLoadersComponent
   ],
   imports: [
     BrowserModule,

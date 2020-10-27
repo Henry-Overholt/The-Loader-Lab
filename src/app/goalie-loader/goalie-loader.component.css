@@ -135,13 +135,12 @@ body {
     left: 5%;
   }
   80% {
-    left: 75%;
-    top: 50%;
+    left: 70%;
+    top: 54%;
     transform: rotate(-260deg);
   }
   100% {
     left: 100%;
-
     top: 50%;
   }
 }
