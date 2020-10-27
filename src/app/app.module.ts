@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { GoalieLoaderComponent } from './goalie-loader/goalie-loader.component';
 import { HeaderComponent } from './header/header.component';
 import { AllLoadersComponent } from './all-loaders/all-loaders.component';
+import { AboutComponent } from './about/about.component';
+import { DescriptionComponent } from './description/description.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GoalieLoaderComponent,
     HeaderComponent,
-    AllLoadersComponent
+    AllLoadersComponent,
+    AboutComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

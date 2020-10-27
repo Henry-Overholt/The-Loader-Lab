@@ -40,11 +40,16 @@ li {
 a {
   padding: 5px 10px;
   border: 2px solid white;
+  color: white;
   font-family: "Bebas Neue", cursive;
   border-radius: 5px;
+  text-decoration: none;
 }
 a:hover {
   border-color: rgb(0, 255, 0);
+}
+.active {
+  background: rgb(103, 13, 103);
 }
 ul {
   display: flex;

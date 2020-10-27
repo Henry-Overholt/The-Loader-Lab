@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {}
   openGithub() {
-    let url = 'https://github.com/';
+    let url = 'https://github.com/Henry-Overholt/The-Loader-Lab';
     window.open(url, '_blank');
   }
 }

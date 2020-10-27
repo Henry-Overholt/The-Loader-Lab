@@ -1,6 +1,6 @@
 <header>
-  <img src="./../../assets/loaderLabIcon.png" alt="" />
-  <h1>THE LOADER LAB</h1>
+  <img routerLink="/home" src="./../../assets/loaderLabIcon.png" alt="" />
+  <h1 routerLink="/home">THE LOADER LAB</h1>
   <i class="fab fa-github-square" (click)="openGithub()"></i>
   <!-- <div id="icon">
     <p>The</p>
@@ -10,7 +10,9 @@
 </header>
 <nav>
   <ul>
-    <li><a>How does it work?</a></li>
+    <li>
+      <a routerLinkActive="active" routerLink="/about">How does it work?</a>
+    </li>
     <li></li>
   </ul>
 </nav>
