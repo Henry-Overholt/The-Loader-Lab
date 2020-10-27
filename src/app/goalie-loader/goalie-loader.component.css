@@ -1,0 +1,346 @@
+body {
+  height: 300px;
+  width: 100%;
+  background: rgb(22, 25, 37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.animationContainer {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.net {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  border: 5px solid rgb(100, 245, 141);
+  border-bottom: 0.5px solid grey;
+}
+.fa-futbol {
+  position: absolute;
+  font-size: 20px;
+  border-radius: 100%;
+  background: white;
+  text-align: center;
+  color: black;
+  top: 93%;
+  left: 85%;
+  animation: shotBall 6s linear infinite;
+}
+.goalie {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-35px);
+  height: 80px;
+  width: 70px;
+  animation: moveGoalie 6s linear infinite;
+}
+.limb {
+  background: rgb(35, 87, 137);
+  position: absolute;
+}
+.head {
+  top: 13px;
+  left: 50%;
+  transform: translate(-7.5px);
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+.arm {
+  border-radius: 3px;
+  width: 25px;
+  height: 5px;
+}
+.leftArm {
+  top: 38px;
+  left: 6px;
+  transform: rotate(-45deg);
+  animation: moveLeftArm 6s linear infinite;
+}
+.rightArm {
+  transform: rotate(45deg);
+  top: 38px;
+  right: 6px;
+  animation: moveRightArm 6s linear infinite;
+}
+.leg {
+  border-radius: 4px;
+  height: 30px;
+  width: 6px;
+  top: 53px;
+}
+.leftLeg {
+  left: 24px;
+  bottom: 2px;
+  transform: rotate(10deg);
+  animation: moveLeftLeg 6s linear infinite;
+}
+.rightLeg {
+  bottom: 2px;
+  right: 24px;
+  transform: rotate(-10deg);
+  animation: moveRightLeg 6s linear infinite;
+}
+.body {
+  width: 20px;
+  height: 28px;
+  top: 28px;
+  left: 50%;
+  border-radius: 3px;
+  transform: translate(-10px);
+}
+.animationContainer:hover {
+  border-color: yellow;
+  transition: all 0.25s ease-in-out;
+}
+
+@keyframes shotBall {
+  2.5% {
+    top: 93%;
+    left: 85%;
+  }
+
+  25% {
+    left: 25%;
+    top: 45%;
+    transform: rotate(-90deg);
+  }
+  50% {
+    left: -5%;
+    top: 20%;
+    transform: rotate(260deg);
+    visibility: hidden;
+  }
+
+  51% {
+    visibility: hidden;
+  }
+  52% {
+    visibility: visible;
+    top: 85%;
+    left: 5%;
+    transform: rotate(0deg);
+  }
+  54.5% {
+    top: 85%;
+    left: 5%;
+  }
+  80% {
+    left: 75%;
+    top: 50%;
+    transform: rotate(-260deg);
+  }
+  100% {
+    left: 100%;
+
+    top: 50%;
+  }
+}
+
+@keyframes moveGoalie {
+  9% {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-35px);
+  }
+  25% {
+    left: 20%;
+    bottom: 8px;
+    transform: rotate(-45deg);
+  }
+  50% {
+    bottom: -28px;
+    left: 8%;
+    transform: rotate(-90deg);
+    visibility: hidden;
+  }
+  51% {
+    visibility: hidden;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-35px);
+  }
+  52% {
+    visibility: visible;
+  }
+  60% {
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-35px);
+  }
+  80% {
+    bottom: -15px;
+    left: 60%;
+    transform: rotate(80deg);
+  }
+  100% {
+    left: 65%;
+    bottom: -28px;
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes moveLeftArm {
+  9% {
+    top: 38px;
+    left: 6px;
+    transform: rotate(-45deg);
+  }
+  25% {
+    top: 12px;
+    width: 33px;
+    left: 10px;
+    transform: rotate(90deg);
+  }
+  50% {
+    top: 13px;
+    width: 30px;
+    left: 10px;
+    transform: rotate(90deg);
+  }
+  51% {
+    top: 38px;
+    left: 6px;
+    transform: rotate(-45deg);
+  }
+  60% {
+    top: 38px;
+    left: 6px;
+    transform: rotate(-45deg);
+  }
+  80% {
+    top: 12px;
+    width: 33px;
+    left: 18px;
+    transform: rotate(-100deg);
+  }
+  100% {
+    top: 13px;
+    width: 25px;
+    left: 14px;
+    transform: rotate(-100deg);
+  }
+}
+@keyframes moveRightArm {
+  9% {
+    transform: rotate(45deg);
+    top: 38px;
+    right: 6px;
+  }
+  25% {
+    right: 10px;
+    transform: rotate(80deg);
+  }
+  50% {
+    right: 10px;
+    transform: rotate(80deg);
+  }
+  51% {
+    transform: rotate(45deg);
+    top: 38px;
+    right: 6px;
+  }
+  60% {
+    transform: rotate(45deg);
+    top: 38px;
+    right: 6px;
+  }
+  75% {
+    top: 16px;
+
+    right: 12px;
+    width: 33px;
+    transform: rotate(-90deg);
+  }
+  90% {
+    top: 16px;
+    right: 12px;
+    width: 33px;
+  }
+  100% {
+    top: 16px;
+    right: 12px;
+    width: 25px;
+    transform: rotate(-90deg);
+  }
+}
+@keyframes moveLeftLeg {
+  9% {
+    left: 24px;
+    bottom: 2px;
+    transform: rotate(10deg);
+  }
+  25% {
+    left: 34px;
+    bottom: 1px;
+    height: 33px;
+    transform: rotate(-25deg);
+  }
+  50% {
+    left: 23px;
+    transform: rotate(13deg);
+  }
+  51% {
+    left: 24px;
+    bottom: 2px;
+    transform: rotate(10deg);
+  }
+  60% {
+    left: 24px;
+    bottom: 2px;
+    transform: rotate(10deg);
+  }
+  80% {
+    left: 34px;
+    bottom: 1px;
+    height: 33px;
+    transform: rotate(-25deg);
+  }
+  100% {
+    left: 23px;
+    transform: rotate(13deg);
+  }
+}
+
+@keyframes moveRightLeg {
+  9% {
+    bottom: 2px;
+    right: 24px;
+    transform: rotate(-10deg);
+  }
+  25% {
+    right: 30px;
+    transform: rotate(20deg);
+  }
+  50% {
+    right: 30px;
+    transform: rotate(20deg);
+  }
+  51% {
+    bottom: 2px;
+    right: 24px;
+    transform: rotate(-10deg);
+  }
+  60% {
+    bottom: 2px;
+    right: 24px;
+    transform: rotate(-10deg);
+  }
+  80% {
+    right: 30px;
+    transform: rotate(20deg);
+  }
+  100% {
+    right: 30px;
+    transform: rotate(20deg);
+  }
+}
