@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { AllLoadersComponent } from './all-loaders/all-loaders.component';
 import { AboutComponent } from './about/about.component';
 import { DescriptionComponent } from './description/description.component';
+import { UmbrellaWindLoaderComponent } from './umbrella-wind-loader/umbrella-wind-loader.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DescriptionComponent } from './description/description.component';
     AllLoadersComponent,
     AboutComponent,
     DescriptionComponent,
+    UmbrellaWindLoaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

@@ -1,0 +1,205 @@
+body {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#loadingTitle {
+  position: relative;
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(137, 252, 0);
+  font-family: "Roboto";
+  overflow: hidden;
+}
+.loadingHide {
+  position: absolute;
+  left: 0;
+  background: rgb(9, 34, 56);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  animation: loadingAnimation 3s ease-in-out infinite;
+}
+.animationContainer {
+  position: relative;
+  width: 75%;
+  height: 90%;
+
+  overflow: hidden;
+}
+i {
+  font-size: 80px;
+  position: absolute;
+}
+.fa-umbrella {
+  color: rgb(148, 72, 188);
+  left: -100px;
+  bottom: 20px;
+  position: absolute;
+  visibility: hidden;
+  transform: rotate(90deg);
+  animation: moveUmbrella 8s linear infinite;
+}
+.fa-wind {
+  color: transparent;
+  bottom: 90px;
+  left: 0;
+  animation: moveWind 8s linear infinite;
+}
+@keyframes loadingAnimation {
+  to {
+    left: 100%;
+  }
+}
+@keyframes moveUmbrella {
+  0% {
+    visibility: visible;
+    left: -50px;
+    bottom: 10px;
+  }
+  10% {
+    left: 10%;
+    bottom: 0;
+    transform: rotate(160deg);
+  }
+  20% {
+    left: 20%;
+    bottom: 10px;
+    transform: rotate(200deg);
+  }
+  30% {
+    left: 30%;
+    bottom: 0;
+    transform: rotate(260deg);
+  }
+  40% {
+    left: 40%;
+    bottom: 20px;
+    transform: rotate(300deg);
+  }
+  50% {
+    left: 50%;
+    bottom: 0;
+    transform: rotate(320deg);
+  }
+  60% {
+    left: 60%;
+    bottom: 10px;
+    transform: rotate(360deg);
+  }
+  70% {
+    left: 70%;
+    bottom: 0;
+    transform: rotate(400deg);
+  }
+  80% {
+    left: 80%;
+    bottom: 22px;
+    transform: rotate(450deg);
+  }
+  90% {
+    left: 90%;
+    bottom: 0;
+    transform: rotate(520deg);
+  }
+  100% {
+    left: 100%;
+    bottom: 10px;
+    transform: rotate(600deg);
+  }
+}
+@keyframes moveWind {
+  0% {
+    bottom: 90px;
+    left: 0;
+    color: transparent;
+  }
+  5% {
+    bottom: 90px;
+    left: 0;
+    color: transparent;
+  }
+  10% {
+    color: rgb(164, 210, 226);
+    bottom: 90px;
+    left: 2.5%;
+  }
+  15% {
+    color: rgb(164, 210, 226);
+    bottom: 90px;
+    left: 5%;
+  }
+  20% {
+    color: transparent;
+    bottom: 90px;
+    left: 7.5%;
+  }
+  30% {
+    color: transparent;
+    left: 17.5%;
+    bottom: 40px;
+  }
+  35% {
+    color: rgb(164, 210, 226);
+    left: 20%;
+    bottom: 40px;
+  }
+  40% {
+    color: rgb(164, 210, 226);
+    left: 22.5%;
+    bottom: 40px;
+  }
+  45% {
+    color: rgb(164, 210, 226);
+    left: 25%;
+    bottom: 40px;
+  }
+  50% {
+    color: transparent;
+    left: 27.5%;
+    bottom: 40px;
+  }
+  60% {
+    color: transparent;
+    left: 50%;
+    bottom: 90px;
+  }
+  65% {
+    color: rgb(164, 210, 226);
+    left: 52.5%;
+    bottom: 90px;
+  }
+  70% {
+    color: rgb(164, 210, 226);
+    left: 55%;
+    bottom: 90px;
+  }
+  75% {
+    color: transparent;
+    left: 57.5%;
+    bottom: 90px;
+  }
+  85% {
+    color: transparent;
+    left: 70%;
+    bottom: 40px;
+  }
+  90% {
+    color: rgb(164, 210, 226);
+    left: 72.5%;
+    bottom: 40px;
+  }
+  95% {
+    color: rgb(164, 210, 226);
+    left: 75%;
+    bottom: 40px;
+  }
+  100% {
+    color: transparent;
+    left: 77.5%;
+    bottom: 40px;
+  }
+}
